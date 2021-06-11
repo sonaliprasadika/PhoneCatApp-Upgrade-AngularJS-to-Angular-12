@@ -9,7 +9,6 @@ import 'angular-resource';
 import 'angular-route';
 
 // Need to import NG 1.x module
-
 import './app-ajs';
 
 platformBrowserDynamic().bootstrapModule(AppModule).then(platformRef => {

@@ -11,7 +11,11 @@ config(['$locationProvider', '$routeProvider',
       template: '<phone-list></phone-list>'
     }).
     when('/phones/:phoneId', {
-      template: '<phone-detail></phone-detail>'
+      template: '<show-details></show-details>'
+    }).
+    when('/sellPhones', {
+      template: require('!raw-loader!./sell-phone/sell-phone.html'),
+      controller: 'SellPhoneController'
     }).
     otherwise('/phones');
   }

@@ -1,0 +1,9 @@
+<h1>{{ title }} ({{title.length}})</h1>
+<div>
+    <input [(ngModel)]="title">
+    <h2 *ngIf="title.length>15"> the title is long!!!</h2>
+    <button (click)="clickButton()">my button</button>
+    <br>
+    <a href="#!/sellPhones">Selling Page</a>
+</div>
+<buy-phone><</buy-phone>
